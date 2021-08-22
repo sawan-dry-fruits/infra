@@ -8,7 +8,7 @@ spec:
     app: auth-service
   ports:
   - port: 
-    - name: posts
+    - name: auth-service
       protocol: TCP
       port: 3000
       targertPort: 3000
