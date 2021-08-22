@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-srv
+spec:
+  type: NodePort
+  selector: 
+    app: auth-service
+  ports:
+  - port: 
+    - name: posts
+      protocol: TCP
+      port: 3000
+      targertPort: 3000
